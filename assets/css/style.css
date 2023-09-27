@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -47,9 +46,9 @@ img {
     height: auto;
 }
 .main-content {
-    width: 100%;
     max-width: 1200px;
     margin: auto;
+    padding: 1rem;
 }
 .main-content .header-content {
     text-align: center;
@@ -64,16 +63,46 @@ img {
     display: flex;
     width: 100%;
     margin-top: 45px;
+    gap: 40px;
 }
 .main-content .wrapper-content .left-content {
     width: 60%;
-    padding-right: 20px;
 }
 .left-content .slide-testimony {
     margin-bottom: 40px;
 }
+.left-content .slide-testimony .img-thumb {
+    position: relative;
+}
 .left-content .slide-testimony .img-thumb img {
     border-radius: 6px;
+}
+.button-slide .btn-next, .button-slide .btn-prev {
+    position: absolute;
+    top: calc(50% - 21px);
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    text-align: center;    
+    box-shadow: 1px 2px 5px rgba(0,0,0,.15);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.button-slide .btn-next:hover, .button-slide .btn-prev:hover {
+    background: #f5f5f5;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.15);
+    transform: translateY(-2px);
+}
+.button-slide .btn-prev {
+    left: -20px;
+}
+.button-slide .btn-next {
+    right: -20px;
 }
 .left-content .slide-testimony .desc-slide {
     font-style: italic;
@@ -109,7 +138,6 @@ img {
 }
 .main-content .wrapper-content .right-content {
     width: 40%;
-    padding-left: 30px;
 }
 .main-content .right-content .card-form {
     background-color: #eee;
@@ -193,13 +221,48 @@ form .btn-send:hover {
 /* #838E9D */
 
 /* responsive */
-
-@media only screen and (max-width: 991.9px)  {
+@media only screen and (max-width: 1200px) {
 
 }
-@media only screen and (max-width: 769.9px)  {
-
+@media only screen and (max-width: 992px)  {
+    .main-content .wrapper-content {
+        gap: 30px;
+    }
+    .main-content .wrapper-content .left-content, .main-content .wrapper-content .right-content {
+        width: 50%;
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 768.9px)  {
 }
 @media only screen and (max-width: 489.9px)  {
-    
+    body {
+        font-size: 12px;
+    }
+    .header .brand-icon {
+        max-width: 100px;
+    }
+    .navigation .nav-item {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .header-content h1 {
+        font-size: 20px;
+    }
+    .left-content .slide-testimony .img-thumb {
+        padding: 0 5px;
+    }
+    .button-slide .btn-prev {
+        left: -5px;
+    }
+    .button-slide .btn-next {
+        right: -5px;
+    }
+    .main-content .wrapper-content {
+        flex-wrap: wrap;
+    }
+    .main-content .wrapper-content .left-content, .main-content .wrapper-content .right-content {
+        width: 100%;
+        padding: 0;
+    }
 }
