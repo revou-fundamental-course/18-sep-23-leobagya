@@ -5,40 +5,41 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Mockup - by Leo Bagya</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-    <script src='assets/js/script.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/script.js'></script>
 </head>
 <body>
     <header class="header">
-        <img src="assets/images/brand-icon.png" alt="" class="brand-icon" id="brand-icon">
+        <img src="images/brand-icon.png" alt="" class="brand-icon" id="brand-icon">
         <nav id="navigation" class="navigation">
             <a class="nav-item" href="#header-content">Home</a>
-            <a class="nav-item" href="#slide-testimony">Our Package</a>
-            <a class="nav-item" href="#section-service">Call Us</a>
+            <a class="nav-item" href="#our-package">Our Package</a>
+            <a class="nav-item" href="#call-us">Call Us</a>
         </nav>
     </header>
     <main class="main-content">
-        <header id="header-content" class="header-content">           
+        <section id="header-content" class="header-content">           
             <h1>Top Rated E-Groceries Shop In Indonesian</h1>
             <p>Every Day with best ingredients</p>
-        </header>
-        <div class="wrapper-content">
-            <section class="left-content">
+        </section>
+        
+        <section class="wrapper-content container">
+            <div class="left-content">
                 <div id="slide-testimony" class="slide-testimony">
                     <div class="img-thumb">
-                        <img id="img-slide" src="assets/images/image-1.jpg" alt="img-default" class="img-slide">
-                        <img id="img-slide" src="assets/images/image-2.png" alt="img-default" class="img-slide">  
-                        <img id="img-slide" src="assets/images/image-3.png" alt="img-default" class="img-slide"> 
+                        <img id="img-slide" src="images/image-1.png" alt="img-default" class="img-slide">
+                        <img id="img-slide" src="images/image-2.png" alt="img-default" class="img-slide">  
+                        <img id="img-slide" src="images/image-3.jpg" alt="img-default" class="img-slide"> 
                         <div class="button-slide">
-                            <button class="btn-prev" onclick="plusDivs(-1)"><img src="assets/images/left-chevron.png"></button> 
-                            <button class="btn-next" onclick="plusDivs(1)"><img src="assets/images/right-chevron.png"></button> 
+                            <button class="btn-prev" onclick="plusDivs(-1)"><img src="images/left-chevron.png"></button> 
+                            <button class="btn-next" onclick="plusDivs(1)"><img src="images/right-chevron.png"></button> 
                         </div> 
                     </div>
                     
                     <p class="desc-slide">"setiap hari beli sayur murah disini" </p>
                     <div class="user">
                         <div class="user-img">                            
-                            <img id="user-icon" src="assets/images/user-icon.png" alt="user-icon">
+                            <img id="user-icon" src="images/user-icon.png" alt="user-icon">
                         </div>
                         <div class="user-profile">
                             <div id="user-name" class="name">Florence Hughes</div>
@@ -67,9 +68,9 @@
                     </div>
 
                 </div>
-            </section>
+            </div>
 
-            <section class="right-content">
+            <div class="right-content">
                 <div class="card-form">                    
                     <h2 class="title">Contact Us</h2>
                     <div class="title-desc">Sales akan mengubungi anda 1x24 jam setelah data kami terima</div>
@@ -97,8 +98,72 @@
                         <button type="submit" id="send-button" class="btn-send">Send</button>
                     </form>
                 </div>
-            </section>            
-        </div>
+            </div>            
+        </section>
+        <section id="our-package" class="our-package" >
+            <div class="title-header">
+                <h2>Our Package</h2>
+            </div>
+            <div class="content-our-package">
+                <div class="container">
+                    <div id="package-list" class="package-list">
+                        <div class="package-item">
+                            <div class="icon"><img src="images/light-bulb.png" alt="icon-package"></div>
+                            <div class="content-right">
+                                <div  class="title">Fresh Vegetable</div>
+                                <div id="package-desc-1" class="package-desc">Sayuran segar langsung dari sumber pertanian terbaik.</div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="icon"><img src="images/light-bulb.png" alt="icon-package"></div>
+                            <div class="content-right">
+                                <div  class="title">Fresh Fruit</div>
+                                <div id="package-desc-2" class="package-desc">Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="icon"><img src="images/light-bulb.png" alt="icon-package"></div>
+                            <div class="content-right">
+                                <div  class="title">Instan Delivery</div>
+                                <div id="package-desc-3" class="package-desc">Dirikim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu.</div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="icon"><img src="images/star.png" alt="icon-package"></div>
+                            <div class="content-right">
+                                <div  class="title">Kitchen Ingredients</div>
+                                <div id="package-desc-4" class="package-desc">Bumbu dapur lengkap untuk keperluan memasak kamu</div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="icon"><img src="images/star.png" alt="icon-package"></div>
+                            <div class="content-right">
+                                <div  class="title">Kitchen Set</div>
+                                <div id="package-desc-5" class="package-desc">Bumbu dapur lengkap untuk keperluan memasak kamu</div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="icon"><img src="images/star.png" alt="icon-package"></div>
+                            <div class="content-right">
+                                <div  class="title">Bunding Set</div>
+                                <div id="package-desc-6" class="package-desc">Bumbu dapur lengkap untuk keperluan memasak kamu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call-us" class="call-us">
+            <div class="container">
+                <div class="title">
+                    <h2>Your Closing Argument Headline</h2>
+                </div>
+                <div class="content-call-us">
+                    <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla,</p>
+                    <button class="btn btn-dark">Call to Action</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer-content">
         <p>Mockup By : Leo Bagya</p>
