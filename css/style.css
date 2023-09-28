@@ -206,6 +206,18 @@ form .btn-send:hover {
 .section-service .service-list .service-item .service-desc {
     padding-left: 16px;
 }
+
+
+
+.package-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 24px 0;
+}
+
 section.our-package .title-header {
     background: #eee;
     padding: 36px 0;
@@ -231,17 +243,28 @@ section.our-package .package-list .package-item .icon {
     padding: 12px;
     border-radius: 50%;
 }
-
+.package-item .content-right {
+    width: calc(100% - 34px);
+}
 .package-item .content-right .title {
     font-weight: bold;
     text-align: left;
     margin-bottom: 10px;
 }
-
-.package-list {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;padding: 24px 0;}
-
-.content-right {
-    width: calc(100% - 34px);
+section.our-package .package-list .content-border {
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+section.our-package .package-list .content-border::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 120px;
+    background-color: #eee;
+    border-radius: 2px;
+    left: calc(50% - 60px);
+    top: calc(50% - 2px);
 }
 
 section.call-us {
@@ -302,6 +325,10 @@ section.call-us .title h2 {
         width: 50%;
         padding: 0px;
     }
+
+    section.our-package .package-list .package-item {
+        width: calc(50% - 20px);
+    }
 }
 @media only screen and (max-width: 768.9px)  {
 }
@@ -334,5 +361,9 @@ section.call-us .title h2 {
     .main-content .wrapper-content .left-content, .main-content .wrapper-content .right-content {
         width: 100%;
         padding: 0;
+    }
+
+    section.our-package .package-list .package-item {
+        width: 100%;
     }
 }
